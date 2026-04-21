@@ -375,6 +375,15 @@ export function useStreamSession({
       };
 
       // ── HTTP signalling (Backend Prototype) ────────────────────────────────
+      // First, get our mock authentication token
+      const authResp = await fetch("http://localhost:8080/api/auth/login", {
+        method: "POST",
+      });
+      if (!authResp.ok) {
+        throw new Error("Failed to authenticate with stream backend");
+      }
+      const { token } = await authResp.json();
+
       // Create offer with generous bandwidth cap — pacing is done server-side
       const offer = await pc.createOffer();
       const cappedSdp = capSdpBandwidth(offer.sdp ?? "", 8000);
@@ -383,7 +392,10 @@ export function useStreamSession({
 
       const resp = await fetch("http://localhost:8080/api/offer", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { 
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${token}` 
+        },
         body: JSON.stringify({ type: "offer", sdp: cappedSdp }),
       });
 
