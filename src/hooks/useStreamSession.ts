@@ -1,6 +1,5 @@
 export interface StreamSession {
   sessionId: string;
-  wsUrl: string;
   iceServers: any[];
 }
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -11,54 +10,7 @@ interface UseStreamSessionProps {
   videoRef?: React.RefObject<HTMLVideoElement | null>;
 }
 
-// ─── Auth token exchange ─────────────────────────────────────────────────────
-async function fetchStreamToken(viewerSubject: string): Promise<string> {
-  const url = `${import.meta.env.VITE_AUTH_TOKEN_EXCHANGE_URL}/token`;
-  const resp = await fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      service: "web-stream",
-      apiKey: import.meta.env.VITE_WEB_STREAM_API_KEY,
-      subject: viewerSubject,
-    }),
-  });
-  if (!resp.ok) {
-    const text = await resp.text();
-    throw new Error(`Stream token exchange failed (${resp.status}): ${text}`);
-  }
-  const data = await resp.json();
-  return data.token as string;
-}
 
-// ─── Create stream session ───────────────────────────────────────────────────
-async function createStreamSession(
-  token: string,
-  payload: UseStreamSessionProps["payload"]
-): Promise<StreamSession> {
-  const body: Record<string, unknown> = {
-    type: payload.type,
-    cameraId: payload.cameraId,
-  };
-  if (payload.incidentId) body.incidentId = payload.incidentId;
-  if (payload.type === "incident") body.ttlSeconds = 30;
-
-  const resp = await fetch(import.meta.env.VITE_STREAM_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${token}`,
-    },
-    body: JSON.stringify(body),
-  });
-
-  if (!resp.ok) {
-    const text = await resp.text();
-    throw new Error(`Session creation failed (${resp.status}): ${text}`);
-  }
-
-  return resp.json() as Promise<StreamSession>;
-}
 
 // ─── Codec preference ────────────────────────────────────────────────────────
 // "Clusters of pixels" (macroblocking) are caused by the decoder missing
@@ -139,6 +91,10 @@ function attachFreezeGuard(
   let frozenSince: number | null = null;
 
   const id = window.setInterval(() => {
+    // Do not trigger freeze recovery when tab is hidden —
+    // browsers throttle timers in background tabs causing
+    // currentTime to stall even on a healthy stream.
+    if (document.hidden) return;
     if (videoEl.paused || videoEl.readyState < 2) return;
 
     const now = videoEl.currentTime;
@@ -210,10 +166,9 @@ export function useStreamSession({
     startedRef.current = true;
 
     try {
-      console.log("[Stream] Bypassing auth config, connecting directly to local backend…");
+      console.log("[Stream] Connecting to backend...");
       const sessionData: StreamSession = {
         sessionId: payload.incidentId || payload.cameraId,
-        wsUrl: "ws://localhost:8080/stream",
         iceServers: [{ urls: "stun:stun.l.google.com:19302" }]
       };
       setSession(sessionData);
@@ -363,7 +318,16 @@ export function useStreamSession({
         const state = pc.connectionState;
         console.log("[Stream] Connection state:", state);
         if (state === "connected")   setIsConnected(true);
-        if (state === "failed" || state === "disconnected") setIsConnected(false);
+        if (state === "failed" || state === "disconnected") {
+          setIsConnected(false);
+          // Auto-reconnect after 2s delay
+          setTimeout(() => {
+            if (!startedRef.current) {
+              console.log("[Stream] Auto-reconnecting...");
+              startStream();
+            }
+          }, 2000);
+        }
       };
 
       pc.onicecandidate = (e) => {
