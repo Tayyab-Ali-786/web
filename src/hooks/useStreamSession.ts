@@ -204,7 +204,8 @@ export function useStreamSession({
           document.querySelector<HTMLVideoElement>("video#live");
         if (!videoEl) return;
 
-        const stream = e.streams[0];
+        const stream = e.streams && e.streams.length > 0 ? e.streams[0] : new MediaStream([e.track]);
+        console.log("[Stream] Track received, setting stream:", stream.id, "tracks:", stream.getTracks().length);
         streamRef.current = stream;
 
         // Apply an initial jitter buffer target of 200ms immediately
