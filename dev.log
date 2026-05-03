@@ -1,0 +1,164 @@
+
+> web@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.100.8:3000
+✓ Ready in 341ms
+
+Error: Can't resolve 'tailwindcss' in '/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype'
+    [2m[at finishWithoutResolve (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:587:18)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:679:14][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in '/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype or above\n' +
+    '  resolve as module\n' +
+    "    /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/node_modules doesn't exist or is not a directory\n" +
+    "    /home/tayyab-ali-rashid/vscode/prototype/node_modules doesn't exist or is not a directory\n" +
+    "    /home/tayyab-ali-rashid/vscode/node_modules doesn't exist or is not a directory\n" +
+    "    /home/tayyab-ali-rashid/node_modules doesn't exist or is not a directory\n" +
+    "    /home/node_modules doesn't exist or is not a directory\n" +
+    "    /node_modules doesn't exist or is not a directory"
+}
+○ Compiling / ...
+Error: Can't resolve 'tailwindcss' in '/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype'
+    [2m[at finishWithoutResolve (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:587:18)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:679:14][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in '/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype or above\n' +
+    '  resolve as module\n' +
+    "    /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/node_modules doesn't exist or is not a directory\n" +
+    "    /home/tayyab-ali-rashid/vscode/prototype/node_modules doesn't exist or is not a directory\n" +
+    "    /home/tayyab-ali-rashid/vscode/node_modules doesn't exist or is not a directory\n" +
+    "    /home/tayyab-ali-rashid/node_modules doesn't exist or is not a directory\n" +
+    "    /home/node_modules doesn't exist or is not a directory\n" +
+    "    /node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in '/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype'
+    [2m[at finishWithoutResolve (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:587:18)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:679:14][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in '/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype or above\n' +
+    '  resolve as module\n' +
+    "    /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/node_modules doesn't exist or is not a directory\n" +
+    "    /home/tayyab-ali-rashid/vscode/prototype/node_modules doesn't exist or is not a directory\n" +
+    "    /home/tayyab-ali-rashid/vscode/node_modules doesn't exist or is not a directory\n" +
+    "    /home/tayyab-ali-rashid/node_modules doesn't exist or is not a directory\n" +
+    "    /home/node_modules doesn't exist or is not a directory\n" +
+    "    /node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in '/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype'
+    [2m[at finishWithoutResolve (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:587:18)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:679:14][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in '/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype or above\n' +
+    '  resolve as module\n' +
+    "    /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/node_modules doesn't exist or is not a directory\n" +
+    "    /home/tayyab-ali-rashid/vscode/prototype/node_modules doesn't exist or is not a directory\n" +
+    "    /home/tayyab-ali-rashid/vscode/node_modules doesn't exist or is not a directory\n" +
+    "    /home/tayyab-ali-rashid/node_modules doesn't exist or is not a directory\n" +
+    "    /home/node_modules doesn't exist or is not a directory\n" +
+    "    /node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in '/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype'
+    [2m[at finishWithoutResolve (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:587:18)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:679:14][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in '/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype or above\n' +
+    '  resolve as module\n' +
+    "    /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/node_modules doesn't exist or is not a directory\n" +
+    "    /home/tayyab-ali-rashid/vscode/prototype/node_modules doesn't exist or is not a directory\n" +
+    "    /home/tayyab-ali-rashid/vscode/node_modules doesn't exist or is not a directory\n" +
+    "    /home/tayyab-ali-rashid/node_modules doesn't exist or is not a directory\n" +
+    "    /home/node_modules doesn't exist or is not a directory\n" +
+    "    /node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in '/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype'
+    [2m[at finishWithoutResolve (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:587:18)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:679:14][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in '/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype or above\n' +
+    '  resolve as module\n' +
+    "    /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/node_modules doesn't exist or is not a directory\n" +
+    "    /home/tayyab-ali-rashid/vscode/prototype/node_modules doesn't exist or is not a directory\n" +
+    "    /home/tayyab-ali-rashid/vscode/node_modules doesn't exist or is not a directory\n" +
+    "    /home/tayyab-ali-rashid/node_modules doesn't exist or is not a directory\n" +
+    "    /home/node_modules doesn't exist or is not a directory\n" +
+    "    /node_modules doesn't exist or is not a directory"
+}
+Error: Can't resolve 'tailwindcss' in '/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype'
+    [2m[at finishWithoutResolve (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:587:18)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:679:14][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/enhanced-resolve/lib/Resolver.js:740:5][0m
+    [2m[at eval (eval at create (/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/web/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve 'tailwindcss' in '/home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype'\n" +
+    '  Parsed request is a module\n' +
+    '  No description file found in /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype or above\n' +
+    '  resolve as module\n' +
+    "    /home/tayyab-ali-rashid/vscode/prototype/huvio-ai-prototype/node_modules doesn't exist or is not a directory\n" +
+    "    /home/tayyab-ali-rashid/vscode/prototype/node_modules doesn't exist or is not a directory\n" +
+    "    /home/tayyab-ali-rashid/vscode/node_modules doesn't exist or is not a directory\n" +
+    "    /home/tayyab-ali-rashid/node_modules doesn't exist or is not a directory\n" +
+    "    /home/node_modules doesn't exist or is not a directory\n" +
+    "    /node_modules doesn't exist or is not a directory"
+}
